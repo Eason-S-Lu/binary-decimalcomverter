@@ -22,6 +22,18 @@ int binaryToDecimal(int n)
     }
     return dec_value;
 }
+void decToBinary(int n)
+{
+    int binaryNum[32];
+    int i = 0;
+    while (n > 0) {
+        binaryNum[i] = n % 2;
+        n = n / 2;
+        i++;
+    }
+    for (int j = i - 1; j >= 0; j--)
+        cout << binaryNum[j];
+}
     int main () {
         using namespace std::this_thread;
         using namespace std::chrono;
@@ -58,7 +70,12 @@ int binaryToDecimal(int n)
         break;
         }
         else if (decbin==2){
-        cout <<"Your program returned with exit code of 0"<<endl<<"Please press run to run the program again.";
+        cout << "Please input your decimal number:";
+        int n;
+        cin >> n;
+        cout <<"Your result is :";
+        decToBinary(n);
+        cout << endl <<"Your program returned with exit code of 0"<<endl<<"Please press run to run the program again.";
         break;
         }
         else{
