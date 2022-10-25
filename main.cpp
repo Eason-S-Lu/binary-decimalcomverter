@@ -57,7 +57,7 @@ int binaryToDecimal(int n)
         cout <<"Your program returned with exit code of 0"<<endl<<"Please press run to run the program again.";
         break;
         }
-        else if (decbin==1){
+        else if (decbin==2){
         cout <<"Your program returned with exit code of 0"<<endl<<"Please press run to run the program again.";
         break;
         }
