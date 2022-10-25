@@ -7,6 +7,7 @@
 #include <stdexcept>
 #include <chrono>
 #include <thread>
+#include <sstream>
 using namespace std;
 int binaryToDecimal(int n)
 {
@@ -43,15 +44,18 @@ void decToBinary(int n)
         cin >> decbin;
         if (decbin == 1){
         int num;
+        int num1;
         while (true){
         cout << "what is your binary number: ";
         int tf;
         cin >> num;
-        string str = to_string(num);
+        num1=num;
+        string str = to_string(num1);
         cout << "debug:str," << str << endl;
         cout << "debug:str.size,"<<str.size() <<endl;
-         for(num=0;num<str.size();num++){
-            if(str[num]!='1' && str[num]!='0'){
+        cout << "debug:num1,"<< num1 << endl;
+         for(num1=0;num1<str.size();num1++){
+            if(str[num1]!='1' && str[num1]!='0'){
             tf=1;
             }
             else{
