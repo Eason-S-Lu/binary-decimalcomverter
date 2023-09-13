@@ -9,8 +9,7 @@
 #include <thread>
 #include <sstream>
 using namespace std;
-int binaryToDecimal(int n)
-{
+int binaryToDecimal(int n){
     int num = n;
     int dec_value = 0;
     int base = 1;
@@ -23,8 +22,7 @@ int binaryToDecimal(int n)
     }
     return dec_value;
 }
-void decToBinary(int n)
-{
+void decToBinary(int n){
     int binaryNum[32];
     int i = 0;
     while (n > 0) {
