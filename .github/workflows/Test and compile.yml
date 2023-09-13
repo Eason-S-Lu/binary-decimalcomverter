@@ -1,10 +1,6 @@
 #Change main.cpp to the cpp file you want to compile
 
 name: C++ code tester
-description: Compile and test c++ file
-branding:
-  color: 'blue'
-  icon: 'check-circle'
 
 on:
   pull_request:
