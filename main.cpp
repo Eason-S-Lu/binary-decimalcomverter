@@ -42,7 +42,7 @@ void decToBinary(int n){
         cin >> decbin;
         if (decbin == 1){
         int num;
-        int num1;
+        string::size_type num1;
         while (true){
         cout << "what is your binary number: ";
         int tf;
